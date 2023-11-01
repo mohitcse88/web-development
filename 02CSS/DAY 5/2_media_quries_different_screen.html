@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @media (max-width : 600px) { */
+            @media(0px <= width <= 600px){
+            /* very small mobile phone / iphone se or smaller */
+            body{
+                background-color: rgb(217, 174, 45);
+            }
+            div::after{
+                content: 'very small';
+            }
+  
+        }
+
+        /* @media (min-width : 600px) { */
+            @media (600px <= width <= 768px) {
+
+            /*600px - 768px*/
+            /* latest mobile like iphone 14, 14 pro, samsang devices */
+            body{
+                background-color: rgb(139, 191, 61);
+            }
+            div::after{
+                content: 'bigger mobile phone';
+            }
+
+        }
+
+        /* @media (min-width : 768px) { */
+            @media (768px <= width <= 992px) {
+
+            /* 768px - 992px */
+            /* tablets in landscape */
+            body{
+                background-color: rgb(76, 176, 67);
+            }
+            div::after{
+                content: 'tablets';
+            }
+
+        }
+
+        /* @media (min-width : 992px) { */
+            @media (992px <= width <= 1200px) {
+
+            /* 992px - 1200px */
+            /* laptops and  bigger tablets*/
+            body{
+                background-color: rgb(39, 154, 146);
+            }
+            div::after{
+                content: 'laptops and bigger tablets';
+            }
+
+        }
+
+        @media (1200px <= width ) {
+            /* bigger latops and monitors screen */
+            body{
+                background-color: rgb(48, 109, 161);
+            }
+            div::after{
+                content: 'bigger laptops and monitor screen';
+            }
+
+        }
+        div{
+            text-align: center;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

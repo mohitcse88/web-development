@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM PART 1 </title>
+</head>
+<body>
+    <!-- ID -->
+    <p id="prag"><span>Hello</span> Namaste</p>
+
+    <!-- CLASS -->
+    <ul>
+        <li class="tech">One</li>
+        <li class="tech">Two</li>
+        <li class="tech">Three</li>
+    </ul>
+
+    <!-- TagName -->
+    <h2>Hello</h2>
+    <h2 class="class">Namaste</h2>
+    <h2 id="ids">Hola</h2>
+
+    <script>
+        // ID
+        // let prag = document.getElementById("prag");
+        let prag = document.getElementById("prag");
+        console.log(prag.innerHTML);
+        console.log(prag.innerText);
+
+        // CLASS
+        let tech = document.getElementsByClassName("tech");
+        console.log(tech);
+        console.log(tech[2]);
+        console.log(tech[2].innerText);
+        tech[2].innerText = "Nodejs" ; // manupulation 
+
+        // TagName
+        let tagName = document.getElementsByTagName("h2");
+        console.log(tagName);
+        tagName[2].innerText = "Hi" ; 
+        console.log(tagName[2].innerText);  
+              
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container {
+            display: grid;
+            height: 680px;
+
+            /* Grid template columns and rows */
+
+            /* grid-template-columns: 100px 100px 100px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-rows: 100px 100px 100px ; */
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            /* grid-template-rows: repeat(3, 100px); */
+            /* grid-template-rows: repeat(3, 1fr); */
+            /* grid-template-rows: repeat(1, 100px); */
+
+            /* Grid minmax  */
+
+            /* grid-template-columns: minmax(300px, 1fr)  minmax(600px, 1fr)  minmax(300px, 1fr); */
+            /* grid-template-rows: repeat(3, 1fr); */
+
+            
+
+            /* grid-area */
+            grid-template-columns: repeat(3, 1fr);
+
+            /* grid-area: header header header main main footer; */
+
+            /* gap  */
+            gap: 10px;
+            /* column-gap:10px ; */
+            /* row-gap: 10px; */
+            /* grid-column-gap: 10px; */
+            /* grid-row-gap: 10px; */
+
+
+            /* border: 1px solid black ; */
+            /* justify-items: center;
+            align-items: center; */
+
+
+        }
+
+        .box {
+            /* height: 100px;
+            width: 100px; */
+            /* border: 1px solid black ; */
+        }
+
+        .box1 {
+            background-color: #9ac2e6;
+        }
+
+        .box2 {
+            background-color: #97cb94;
+            /* justify-self: start;
+            align-self: flex-start; */
+        }
+
+        .box3 {
+            background-color: #e1c68d;
+        }
+
+        .box4 {
+            background-color: #c874a9;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .box5 {
+            background-color: #4aa242;
+        }
+
+        .box6 {
+            background-color: #c67464;
+        }
+
+        .box7 {
+            background-color: #9da85d;
+        }
+
+        .box8 {
+            background-color: #4f378c;
+        }
+
+        .box9 {
+            background-color: #7eb7ae;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Grid row and column -->
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+    </div>
+</body>
+
+</html>

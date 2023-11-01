@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #3498db;
+            /* Change the background color to your preference */
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: #fff;
+            /* Text color */
+        }
+
+        .navbar a:hover {
+            background-color: #2980b9;
+            /* Change the hover color to your preference */
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            float: right;
+            padding: 10px;
+        }
+
+        .search-bar input[type="text"] {
+            width: 150px;
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            background-color: #2ecc71;
+            /* Change the search button color to your preference */
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+        }
+
+        /* Sign in/sign out styles */
+        .user-actions {
+            float: right;
+        }
+
+        /* Change the button colors for sign in and sign out to your preference */
+        .user-actions button {
+            padding: 5px 10px;
+            background-color: #e74c3c;
+            /* Sign in button color */
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            margin-left: 10px;
+        }
+
+        /* Styles for the hero section */
+        .hero {  
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f0f0f0;
+            /* Change the background color as needed */
+        }
+
+        /* Style for the image on the left */
+        .hero-image img {
+            width: 150px;
+            /* Adjust the size of the circle as needed */
+            height: 150px;
+            border-radius: 50%;
+            /* Create a circular shape */
+            border: 3px solid #fff;
+            /* Add a white border around the circle */
+        }
+
+        /* Style for the quote on the right */
+        .hero-quote {
+            max-width: 50%;
+            /* Adjust the width as needed */
+            text-align: right;
+            font-size: 24px;
+            /* Adjust the font size as needed */
+            margin-right: 20px;
+            /* Add some space between the image and the quote */
+        }
+
+        blockquote {
+            font-style: italic;
+            color: #333;
+            /* Adjust the text color as needed */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Live Projects</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        <div class="user-actions">
+            <button id="sign-in">Sign In</button>
+            <button id="sign-out">Sign Out</button>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-image">
+            <img src="your-image.jpg" alt="Hero Image">
+        </div>
+        <div class="hero-quote">
+            <blockquote>
+                "Your Quote Goes Here"
+            </blockquote>
+        </div>
+    </div>
+
+</body>
+
+</html>

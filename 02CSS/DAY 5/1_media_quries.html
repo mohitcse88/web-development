@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* this is for mobile */
+        body {
+            background-color: #d9ff00;
+        }
+
+        div {
+            text-align: center;
+            font-size: x-large;
+        }
+
+        div::after {
+            content: 'Hey, I am before Media Queries I';
+        }
+
+        /* Media Queries */
+        @media (max-width : 400px) {
+            body {
+                background-color: purple;
+            }
+
+            div::after {
+                content: 'very small screen';
+            }
+        }
+        /* and use for conditional statement */
+        @media (min-width : 400px) and (max-width : 768px){
+            body{
+                background-color: aquamarine;
+            }
+            div::after{
+                content: 'Medium Screen';
+            }
+        }
+        @media (768px <= width <= 1000px ){
+            body{
+                background-color:burlywood ;
+            }
+            div::after{
+                content: 'Medium Large Screen';
+            }
+
+        }
+        </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

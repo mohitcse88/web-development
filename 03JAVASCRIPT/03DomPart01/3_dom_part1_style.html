@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM PART 1 </title>
+</head>
+
+<body>
+    <!-- TagName -->
+    <h4>Hello</h4>
+    <h4>Namaste</h4>
+    <h4>Hola</h4>
+
+    <h2>Hello</h2>
+    <h2 class="classs">Namaste</h2>
+    <h2 id="ids">Hola</h2>
+
+
+    <script>
+        // TagName
+        let tagName = document.getElementsByTagName("h4");
+        console.log(tagName[2]);
+        tagName[2].style.color = "red" ; 
+
+        // Query Selector 
+        // let qs = document.querySelector("h2");
+        let qs = document.querySelector(".classs");
+        // qs.className = "hello" ;  
+        console.log(qs);
+
+        qs.classList = "hello color background image";
+        qs.setAttribute("title","Pw Skills");
+
+        let dom = document.getElementsByClassName("classs");
+        console.log(dom);
+
+    </script>
+</body>
+
+</html>

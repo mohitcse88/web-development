@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT DOM</title>
+</head>
+
+<body>
+    <h1>Hey, How are you?</h1>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <script>
+        // Create Element
+        let title = document.createElement("h1"); // after creating h1 storing title variable
+        title.className = "pwskills";  // adding class name 
+        title.style.fontSize = "25px";
+        title.textContent = "PW Skills, Namaste";
+        console.log(title); // run in console 
+        document.body.appendChild(title);
+
+        // Remove Child
+        let ul = document.querySelector("ul");
+        console.log(ul);
+        let lists = document.querySelectorAll("li");
+        console.log(lists);
+        for (list of lists) {
+            ul.removeChild(list);
+        }
+        // lists.remove();
+
+        // Remove H1
+        const element = document.getElementsByName("h1");
+        element.remove();
+        // const element = document.querySelector("h1"); // Corrected selection
+        // element.remove();
+    </script>
+
+</body>
+
+</html>

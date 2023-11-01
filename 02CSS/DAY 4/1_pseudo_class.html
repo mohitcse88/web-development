@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Pseudo Class */
+        .hello:hover {
+            background-color: #100f0f;
+            color: #f1ecec;
+            font-size: large;
+            font-variant: small-caps;
+            border: 5px solid rgb(224, 164, 11);
+        }
+
+        input:focus {
+            background-color: gray;
+            color: white;
+            font-size: larger;
+            font-variant: small-caps;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: rgb(178, 44, 44);
+        }
+
+        a:hover {
+            color: rgb(39, 200, 200);
+            background-color: black;
+        }
+
+        a:active {
+            color: black;
+
+        }
+
+        a:visited {
+            color: pink;
+
+        }
+
+        /* a:first-child {
+            background-color: yellowgreen;
+
+        } */
+
+        a:nth-child(odd) {
+            background-color:#008000;
+        }
+        /* Pseudo Elements :: */
+        .lorem::first-line{
+            background-color: green;
+            
+        }
+        .lorem::first-letter{
+            background-color: black;
+            color: #808080;
+        }
+        .lorem::before{
+            content: "Pw Skills";
+            color: red;
+            background-color:#808080;
+        }
+        .lorem::after{
+            content: "Pw Skills";
+            color: red;
+            background-color:#808080;
+        }
+        ::selection{
+            background-color: black;
+            color: white;
+            
+        }
+        ::marker{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Pseudo Class -->
+    <!-- :hover -->
+    <p class="hello">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas magni sed temporibus totam,
+        similique porro. Iure saepe animi voluptatibus delectus ratione voluptates repellendus sunt aut doloremque! Id
+        quas cupiditate laudantium!</p>
+    <!-- :focus -->
+    <input type="text">
+
+    <hr>
+    <nav>
+        <a href="https://www.google.co.in/" target="_blank">hostinger</a><br>
+        <a href="hostinger.in" target="_blank">hostinger</a><br>
+        <a href="hostinger.in" target="_blank">hostinger</a><br>
+        <a href="https://www.google.co.in/" target="_blank">hostinger</a><br>
+        <a href="hostinger.in" target="_blank">hostinger</a><br>
+        <a href="hostinger.in" target="_blank">hostinger</a><br>
+    </nav>
+    <hr>
+    <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius consectetur vitae est repellat. Fugiat excepturi, cumque nam, officiis pariatur vel, tenetur dignissimos placeat reprehenderit velit voluptates nesciunt commodi deserunt numquam.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iusto cum, sunt amet alias aspernatur eaque excepturi fugit veniam eum, corporis laborum eius iure quisquam, at similique! Ducimus, eligendi nesciunt.</p>
+    <ul>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+    </ul>
+</body>
+
+</html>

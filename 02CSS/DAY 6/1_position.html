@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION</title>
+    <style>
+        .main{
+            border: 1px solid red;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            border-radius: 10px;
+        }
+
+        .class1 {
+            background-color: #798041;
+            position: absolute;
+            left: 50px;
+            top: 10px;
+           
+        }
+
+        .class2 {
+            background-color: #9acd32;
+            position: relative;
+            left: 50px;
+            top: 10px;
+           
+           
+        }
+
+        .class3 {
+            background-color: #588db0;
+            position: sticky;
+            top: 0;
+
+        }
+
+        .class4 {
+            background-color: rgb(128, 87, 171);
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS POSITION PROPERTY -->
+      <div class="main">
+        <div class="box class1" title="Hey, I'm Absolute"></div>
+        <div class="box class2" title="Hey, I'm Relative"></div>
+        <div class="box class3" title="Hey, I'm Sticky"></div>
+        <div class="box class4"  title="Hey,I'm Fixed "></div>
+    </div>
+</body>
+
+</html>
